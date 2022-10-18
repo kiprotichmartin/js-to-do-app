@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Vanilla JS ToDo App</h1>
+    <form class="todo-form">
+      <div class="form-wrapper">
+        <input type="text" id="title" autofocus placeholder="Enter title here.." />
+        <input type="text" id="descr" placeholder="Enter description here..." />
+        <input type="date" id="datetime" />
+      </div>
+      <div class="form-wrapper">
+        <button type="submit">Add new task</button>
+      </div>
+    </form>
+
+    <div class="todo-stats">
+      <div class="total-tasks">Total Tasks: <span>0</span></div>
+      <div class="completed-tasks">Completed Tasks: <span>0</span></div>
+      <div class="remaining-tasks">Remaining Tasks: <span>0</span></div>
+    </div>
+
+    <span class="message"></span>
+
+    <ol class="todo-list"></ol>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

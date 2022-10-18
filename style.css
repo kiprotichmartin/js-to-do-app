@@ -1,0 +1,180 @@
+/*=============== GOOGLE FONT ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap');
+
+:root {
+  --white: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+ol {
+  list-style: none;
+}
+
+button,
+label {
+  cursor: pointer;
+}
+
+body {
+  font-size: 20px;
+  background: linear-gradient(45deg, #852626, #3e0a6e);
+  /* background-repeat: no-repeat; */
+
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  color: greenyellow;
+  margin-bottom: 10px;
+}
+
+/* style for the container element */
+.container {
+  margin: 20px 0;
+  max-width: 700px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.container .todo-form,
+.container .todo-list {
+  border-radius: 5px;
+}
+
+.container .todo-form {
+  background-color: rgb(199, 199, 218);
+}
+
+.container .todo-list {
+  background-color: rgb(40, 40, 46);
+  color: #ffffff;
+}
+
+/*CUSTOM VARIABLES HERE*/
+
+/* styles for todo forms */
+/* .todo-form .form-wrapper {
+  position: relative;
+} */
+
+.todo-form input {
+  border-bottom: 4px solid #000;
+  margin-bottom: 10px;
+}
+
+.todo-form input,
+.todo-form button {
+  width: 100%;
+  padding: 15px;
+}
+
+.todo-form input[id="title"] {
+  text-transform: uppercase;
+}
+
+.todo-form button {
+  color: #ffffff;
+  background-color: #000000;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.todo-form button:hover {
+  color: lightcoral;
+}
+
+/* styles for todo stats */
+.todo-stats {
+  padding: 10px 10px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: greenyellow;
+}
+
+.message {
+  text-align: center;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+/* styles for individual task items */
+.todo-list {
+  background-color: #3a3030;
+  color: #ffffff;
+  padding: 15px 10px;
+}
+
+.todo-list li {
+  display: grid;
+  align-items: baseline;
+  grid-template-columns: auto 20px;
+  grid-column-gap: 10px;
+  margin: 10px 10px;
+  padding: 10px;
+  border: 1px solid #a397ad;
+}
+
+.todo-list li+li {
+  margin-top: 10px;
+}
+
+/* styles for complete/incomplete tasks */
+.todo-list .checkbox-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.todo-list .checkbox-wrapper .taskTitle {
+  text-transform: uppercase;
+}
+
+.todo-list .checkbox-wrapper .computedTime {
+  text-decoration: none;
+}
+
+/* .todo-list .checkbox-wrapper svg {
+  grid-column: 1;
+  grid-row: 1;
+  width: 20px;
+  height: 20px;
+} */
+
+/* .todo-list .checkbox-wrapper .checkmark {
+  display: none;
+}
+
+.todo-list [type='checkbox']:checked+label .checkmark {
+  display: block;
+} */
+
+.todo-list [type='checkbox']:checked~.task {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/* styles for the delete button */
+.todo-list .remove-task {
+  display: flex;
+  padding: 3px;
+  background-color: #3a3030;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.remove-task:hover {
+  color: lightcoral;
+}
